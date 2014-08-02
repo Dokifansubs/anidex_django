@@ -27,6 +27,7 @@ class Torrent(models.Model):
     date = models.DateTimeField(default=datetime.utcnow, blank=True)
     seeders = models.IntegerField()
     leechers = models.IntegerField()
+    completed = models.IntegerField(default=0)
     
     def __unicode__(self):
         return self.name
