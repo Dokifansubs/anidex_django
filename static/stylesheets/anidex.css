@@ -1,0 +1,231 @@
+@media (min-width:768px) {
+    .container {
+        width:750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width:970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width:1170px;
+    }
+}
+
+@media (min-width:1600px) {
+    .container {
+        width:1600px;
+    }
+}
+
+@font-face {
+    font-weight:300;
+    font-style:normal;
+    font-family:'Titillium Web';
+    src:url(/fonts/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+    font-weight:400;
+    font-style:normal;
+    font-family:'Titillium Web';
+    src:url(/fonts/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-weight:600;
+    font-style:normal;
+    font-family:'Titillium Web';
+    src:url(/fonts/TitilliumWeb-SemiBold.ttf);
+}
+
+@font-face {
+    font-weight:700;
+    font-style:bold;
+    font-family:'Titillium Web';
+    src:url(/fonts/TitilliumWeb-Bold.ttf);
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    padding-top: 70px;
+}
+
+.box {
+    border: 1px solid #CCC;
+    margin: 0px 0px 16px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.box > .header {
+    background-color: #DDD;
+    height: 37px;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 7px 0px 0px !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.box > .header > h5 {
+    padding: 3px 10px 0px 13px !important;
+    margin: 0px;
+}
+
+tr.odd {
+    background-color: #DDD;
+}
+
+tr.even {
+    background-color: #FFF;
+}
+
+table.tor {
+    overflow: auto;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 0px none;
+    line-height: 25px;
+}
+
+.badge {
+    border-radius: 7px;
+    margin-top: 4px;
+    padding-top: 2px;
+}
+
+.tor tr:last-child .tor-cat:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+.tor {
+    margin: 0px;
+    border: 0px none;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tor-cat {
+    color: brown;
+    width: 64px;
+    min-width: 64px;
+    padding: 2px 5px !important;
+    text-align: left;
+}
+
+.tor-cat-title {
+    width: 64px;
+    min-width: 64px;
+	padding-left: 5px !important;
+    text-align: left;
+}
+
+.tor-comment {
+    float: right;
+    text-align: right;
+}
+
+.tor-s {
+    text-align: center;
+    color: green;
+    width: 50px;
+    min-width: 50px;
+}
+
+.tor-l {
+    text-align: center;
+    color: red;
+    width: 50px;
+    min-width: 50px;
+}
+
+.tor-c {
+    color: purple;
+    text-align: center;
+    width: 50px;
+    min-width: 50px;
+}
+
+.tor-age {
+    text-align: center;
+    width: 80px;
+    min-width: 80px;
+}
+
+.tor-size {
+    text-align: center;
+    color: brown;
+}
+
+.tor-d {
+    text-align: center;
+    width: 50px;
+    min-width: 50px;
+    /*border-right: 2px solid #AAA;*/
+}
+
+.tor-separator {
+    text-align: center;
+    width: 14px;
+    min-width: 14px;
+}
+
+.tor-details {
+    padding: 2px 5px;
+    vertical-align: top;
+}
+
+.center {
+    text-align: center;	
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: purple;
+}
+
+.tor > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+a.login {
+    cursor: pointer;
+}
+
+/*
+.checkbox input[type="checkbox"] {
+    margin-left: 0px;
+}
+*/
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+input#remember-me {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

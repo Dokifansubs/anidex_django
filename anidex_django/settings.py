@@ -89,3 +89,15 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
     'django.core.context_processors.request',
 )
 
+TEMPLATE_LOADERS = (
+    ('pyjade.ext.django.Loader',(
+        'django.template.loaders.filesystem.Loader',
+        'django.template.loaders.app_directories.Loader',
+    )),
+)
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)

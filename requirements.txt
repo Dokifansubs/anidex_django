@@ -1,3 +1,4 @@
 django>=1.6
 pyjade>=2.2
 django-suit>=0.2.9
+datetime>=4.0.1

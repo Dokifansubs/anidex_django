@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import datetime
 # Create your models here.
 
 class Group(models.Model):
@@ -24,7 +24,7 @@ class Torrent(models.Model):
     likes = models.IntegerField()
     size = models.IntegerField()
     info_hash = models.CharField(max_length=20)
-    timestamp = models.IntegerField()
+    date = models.DateTimeField(default=datetime.utcnow, blank=True)
     seeders = models.IntegerField()
     leechers = models.IntegerField()
     
