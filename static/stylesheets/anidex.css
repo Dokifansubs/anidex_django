@@ -26,28 +26,28 @@
     font-weight:300;
     font-style:normal;
     font-family:'Titillium Web';
-    src:url(/fonts/TitilliumWeb-Light.ttf);
+    src:url(../fonts/TitilliumWeb-Light.ttf);
 }
 
 @font-face {
     font-weight:400;
     font-style:normal;
     font-family:'Titillium Web';
-    src:url(/fonts/TitilliumWeb-Regular.ttf);
+    src:url(../fonts/TitilliumWeb-Regular.ttf);
 }
 
 @font-face {
     font-weight:600;
     font-style:normal;
     font-family:'Titillium Web';
-    src:url(/fonts/TitilliumWeb-SemiBold.ttf);
+    src:url(../fonts/TitilliumWeb-SemiBold.ttf);
 }
 
 @font-face {
     font-weight:700;
     font-style:bold;
     font-family:'Titillium Web';
-    src:url(/fonts/TitilliumWeb-Bold.ttf);
+    src:url(../fonts/TitilliumWeb-Bold.ttf);
 }
 
 body {
