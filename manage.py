@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+try:
+    import pymysql
+    from gevent import monkey
+    pymysql.install_as_MySQLdb()
+    monkey.patch_all()
+except ImportError as e:
+    print e
+
+
 import os
 import sys
 
