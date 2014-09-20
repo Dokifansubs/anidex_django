@@ -10,5 +10,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^refresh', 'index.views.get_stats'),
-    url(r'', 'index.views.main')
+    url(r'^$', 'index.views.main'),
+    url(r'^whitelist', 'index.views.whitelist'),
 )

@@ -3,6 +3,7 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.urlresolvers import reverse
 # Create your views here.
 from django.http import HttpResponse
+from datetime import datetime
 
 from index.models import *
 from collections import defaultdict
@@ -52,3 +53,10 @@ def main(request):
             d['completed'] = stat.completed
         render_objs.append(d)
     return render_to_response("index.jade", dict(torrents=render_objs))
+
+
+def whitelist(request):
+    ts = request.GET.get('ts', 0)
+    torrets = Torrent.objects.filter(date__gte=datetime.utcfromtimestamp(int(ts))).only('info_hash')
+    resp = HttpResponse('\n'.join(t.info_hash for t in torrets), content_type='text/plain')
+    return resp
