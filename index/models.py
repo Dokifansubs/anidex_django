@@ -38,7 +38,7 @@ class Torrent(models.Model):
     owner = models.ForeignKey(User)
     groups = models.ManyToManyField(Group, blank=True)
     likes = models.IntegerField(default=0, blank=True)
-    size = models.IntegerField()
+    size = models.BigIntegerField()
     info_hash = models.CharField(max_length=40)
     date = models.DateTimeField(default=datetime.utcnow, blank=True)
     trackers = models.ManyToManyField(Tracker)
